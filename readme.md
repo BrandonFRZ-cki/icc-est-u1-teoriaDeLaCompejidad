@@ -51,4 +51,27 @@ Este proyecto implementa y compara diferentes algoritmos de ordenamiento en Pyth
 
 ##  CONCLUCIONES CON TERMINOLOGIA DE NOTACION 
 
- - La comparación de los métodos de ordenamiento muestra que, en términos de notación Big-O, los algoritmos como BURBUJA tienen un mejor rendimiento promedio con \( O(n \log n) \), mientras que otros como BubbleSort tienen un peor rendimiento con \( O(n^2) \). Por lo tanto, BURBUJA es más rápido en la mayoría de los casos, especialmente para conjuntos de datos grandes. (**EJEMPLO INFORMACION INCORRECTA**) 
+# 🔍 Análisis y Conclusiones
+---
+## Conclusiones Brandon Rivera:
+
+    - Shell Sort fue el algoritmo más eficiente en todos los tamaños de arreglo, destacando por sus bajos tiempos de ejecución gracias a su estrategia de incrementos decrecientes.
+
+    - Burbuja Mejorado presentó peores resultados que el método burbuja estándar, lo cual indica que, en este caso, la optimización no generó una mejora en el rendimiento.
+
+    - Selección e Inserción mostraron tiempos competitivos en tamaños pequeños, pero su desempeño fue inferior a Shell Sort conforme aumentó el tamaño del arreglo.
+
+    - Burbuja confirmó su ineficiencia para arreglos grandes debido a su alta complejidad computacional, siendo uno de los algoritmos más lentos evaluados.
+
+## Conclusiones Erick Yunga:
+
+    - Shell Sort resultó ser el más eficiente de todos los algoritmos evaluados, manteniendo tiempos de ejecución muy bajos incluso con 100,000 elementos.
+
+    - Burbuja Mejorado, a pesar de ser una versión optimizada, no logró superar al método burbuja estándar, lo cual demuestra que la mejora aplicada no fue útil en este escenario.
+
+    - Selección fue más eficiente que burbuja y burbuja mejorado en la mayoría de los casos, especialmente en tamaños intermedios y grandes.
+
+    - Inserción funcionó bien con arreglos más pequeños, pero su eficiencia disminuyó al trabajar con mayores volúmenes de datos.
+
+    - Burbuja fue el algoritmo menos eficiente, con tiempos de ejecución significativamente más altos, reafirmando su desventaja frente a métodos más avanzados.
+---
