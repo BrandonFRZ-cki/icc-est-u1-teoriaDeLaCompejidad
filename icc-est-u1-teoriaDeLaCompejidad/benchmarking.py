@@ -19,5 +19,11 @@ class Benchmarking:
             arr_peque.append(gran_array[i])
         return arr_peque
     
+    def medir_tiempo(self,tarea,array):
+        inicio = time.perf_counter()
+        tarea(array)
+        fin = time.perf_counter()
+        return fin-inicio
     
+
 
