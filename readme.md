@@ -1,4 +1,4 @@
- # INFROME DE README
+ # INFROME README
 
 # Práctica Teoria de la Complejidad
 
@@ -55,13 +55,24 @@ Este proyecto implementa y compara diferentes algoritmos de ordenamiento en Pyth
 ---
 ## Conclusiones Brandon Rivera:
 
-    - Shell Sort fue el algoritmo más eficiente en todos los tamaños de arreglo, destacando por sus bajos tiempos de ejecución gracias a su estrategia de incrementos decrecientes.
+Los resultados muestran cómo la **complejidad de los algoritmos** impacta su rendimiento al incrementar 
+el tamaño del arreglo. Los métodos con **\(O(n^2)\)** se vuelven cada vez más lentos, mientras que 
+**Shell Sort**, con una complejidad cercana a **\(O(n \log n)\)**, mantiene tiempos de ejecución bajos 
+y estables.
 
-    - Burbuja Mejorado presentó peores resultados que el método burbuja estándar, lo cual indica que, en este caso, la optimización no generó una mejora en el rendimiento.
+- **🫧 Burbuja \(O(n^2)\)** 
+  - Fue el algoritmo menos eficiente, con tiempos que aumentan drásticamente. Para **100,000 elementos**, tardó **5 minutos 17 segundos**, confirmando que no es viable para conjuntos grandes.
+- **🫧 Burbuja Mejorado \(O(n^2)\)**
+  - En lugar de optimizar el rendimiento, fue aún más lento. Con **100,000 elementos**, tardó **8 minutos 41 segundos**, mostrando que la optimización aplicada no tuvo impacto en este caso.
+- **🤏🏻 Selección \(O(n^2)\)** 
+  - Tuvo tiempos aceptables en arreglos pequeños, pero empeoró con volúmenes mayores. En **100,000 elementos**, tardó **3 minutos 21 segundos**, manteniéndose por debajo de Burbuja Mejorado pero aún poco eficiente.
+- **📥 Inserción \(O(n^2)\)** 
+  - Siguió un patrón similar a Selección, con tiempos similares en arreglos pequeños, pero en **100,000 elementos**, tardó **3 minutos 47 segundos**, evidenciando que no escala bien con grandes volúmenes de datos.
+- **🦘Shell Sort \(O(n \log n)\)** 
+  - Fue el más eficiente, con tiempos casi constantes. En **100,000 elementos**, tardó **0.41 segundos**, lo que lo convierte en la mejor opción para manejar grandes conjuntos de datos.
 
-    - Selección e Inserción mostraron tiempos competitivos en tamaños pequeños, pero su desempeño fue inferior a Shell Sort conforme aumentó el tamaño del arreglo.
+Este análisis confirma que **los algoritmos cuadráticos no son recomendables para grandes volúmenes de datos**, mientras que **Shell Sort es una mejor alternativa por su estructura de *gaps decrecientes***. Elegir el algoritmo adecuado puede hacer una gran diferencia en eficiencia y rendimiento.
 
-    - Burbuja confirmó su ineficiencia para arreglos grandes debido a su alta complejidad computacional, siendo uno de los algoritmos más lentos evaluados.
 
 ## Conclusiones Erick Yunga:
 
